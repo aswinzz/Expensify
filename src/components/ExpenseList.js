@@ -5,8 +5,8 @@ import selectExpenses from '../selectors/expenses';
 import Summary from './Summary';
 const ExpenseList = (props) => (
     <div>
-        ExpenseList
         <Summary/>
+        ExpenseList
         <ol>
         {props.expenses.map((expense)=>{
             return (

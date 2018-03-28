@@ -4,8 +4,10 @@ import Calculate from './Summary-Calculate';
 import selectExpenses from '../selectors/expenses';
 const ExpenseList = (props) => (
     <div>
-        Expense - total<br/>
-        {Calculate(props)}
+       Statistics <hr/>
+        Total Number : {props.expenses.length}<br/>
+        Total Amount : {Calculate(props)}<br/>
+        <hr/>
     </div>
 );
 
