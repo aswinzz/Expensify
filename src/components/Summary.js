@@ -1,20 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ExpenseListItem from './ExpenseListItem';
+import Calculate from './Summary-Calculate';
 import selectExpenses from '../selectors/expenses';
-import Summary from './Summary';
 const ExpenseList = (props) => (
     <div>
-        ExpenseList
-        <Summary/>
-        <ol>
-        {props.expenses.map((expense)=>{
-            return (
-                <ExpenseListItem key={expense.id} {...expense}/>       
-            );
-        })}
-        </ol>
-        
+        Expense - total<br/>
+        {Calculate(props)}
     </div>
 );
 
