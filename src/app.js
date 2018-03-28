@@ -21,10 +21,6 @@ store.subscribe(() => {
     console.log(visibleExpenses);
   });
 
-const expenseOne = store.dispatch(addExpense({ description: 'Gas bill',note : 'asdasd', amount: 100, createdAt: 1000 }));
-const expenseTwo = store.dispatch(addExpense({ description: 'Water bill', amount: 200, createdAt: -1000 }));
-
-
 
 const jsx = (
     <Provider store={store}>
