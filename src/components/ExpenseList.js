@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import ExpenseListItem from './ExpenseListItem';
 import selectExpenses from '../selectors/expenses';
 import Summary from './Summary';
+import startApp from '../actions/expenses';
+
 const ExpenseList = (props) => (
     <div>
         <Summary/>

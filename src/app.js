@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import AppRouter from './routes/AppRouter'
-
+import './firebase/firebase';
 
 const store = configureStore();
 
