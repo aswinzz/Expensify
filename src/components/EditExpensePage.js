@@ -13,7 +13,7 @@ const EditExpensePage = (props) => {
             onSubmit={(expense)=>{
                 props.dispatch(startEditExpense(props.expense.id,expense));
                 console.log(expense);
-                props.history.push('/');
+                props.history.push('/dashboard');
                 console.log("updated ",expense);
             }}
             />
@@ -22,6 +22,7 @@ const EditExpensePage = (props) => {
 };
 
 const mapStateToProps = (state,props) => {
+    console.log(props);
     return {
         expense : state.expenses.find((expense)=>{
             return expense.id === props.match.params.id;
