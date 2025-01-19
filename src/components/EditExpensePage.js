@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
 import { startEditExpense } from '../actions/expenses';
 
-const EditExpensePage = (props) => {
+const EditExpensePage = (props: { expense: any }) => {
     console.log(props);
     return (
         <div>
